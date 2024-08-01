@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: left;
+  
+}
+
+html {
+  font-size: 62.5%;
+}
+
+table {
+  /* margin: 5rem auto; */
+  border-radius: 2rem;
+  border: 1rem hidden #443c68;
+  border-collapse: collapse;
+  overflow: hidden;
+  
+}
+
+li,
+p,
+a,
+td {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+thead {
+  font-size: 1.8rem;
+  /* background-color: #443c68; */
+  /* color: #fff; */
+}
+
+th,
+td {
+  border: 1px solid black;
+  min-width: 20rem;
+  padding: 0.9rem;
+  line-height: 1;
+}
+
+img {
+  margin-left: 55px;
+}
+
