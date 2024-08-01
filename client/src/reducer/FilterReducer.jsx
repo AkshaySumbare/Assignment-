@@ -21,31 +21,36 @@ const FilterReducer = (state, action) => {
     case "SORTING_USERS":
       //let newSortData;
       let result;
-      let tempSortProduct = [...action.payload];
-      if (tempSortProduct.length > 0 && state.sorting_value === "z-a") {
-        result = tempSortProduct.sort((a, b) =>
+      let tempSortUser = [...action.payload];
+      if(tempSortUser.length >0 && state.sorting_value ==="0"){
+        result =tempSortUser;
+      }
+      if (tempSortUser.length > 0 && state.sorting_value === "z-a") {
+        result = tempSortUser.sort((a, b) =>
           b.username.localeCompare(a.username)
         );
         console.log("result z-a", result);
-      } else if (tempSortProduct.length > 0 && state.sorting_value === "a-z") {
-        result = tempSortProduct.sort((a, b) =>
+      } else if (tempSortUser.length > 0 && state.sorting_value === "a-z") {
+        result = tempSortUser.sort((a, b) =>
           a.username.localeCompare(b.username)
         );
         console.log("result a-z", result);
       } else if (
-        tempSortProduct.length > 0 &&
+        tempSortUser.length > 0 &&
         state.sorting_value === "female"
       ) {
-        result = tempSortProduct.sort((a, b) =>
+        result = tempSortUser.sort((a, b) =>
           a.gender.localeCompare(b.gender)
         );
         console.log("result female", result);
-      } else if (tempSortProduct.length > 0 && state.sorting_value === "male") {
-        result = tempSortProduct.sort((a, b) =>
+      } else if (tempSortUser.length > 0 && state.sorting_value === "male") {
+        result = tempSortUser.sort((a, b) =>
           b.gender.localeCompare(a.gender)
         );
         console.log("result  male", result);
       }
+     
+     
 
       return {
         ...state,

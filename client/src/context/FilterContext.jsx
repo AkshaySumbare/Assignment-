@@ -13,7 +13,7 @@ const FilterContext = createContext();
 const initialState = {
   filter_users: [],
   all_users: [],
-  sorting_value: "z-a",
+  sorting_value: "male",
 };
 
 export const FilterContextProvider = ({ children }) => {

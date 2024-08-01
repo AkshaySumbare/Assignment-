@@ -1,6 +1,6 @@
-import { useState } from "react";
+//import { useState } from "react";
 import "./App.css";
-import { UserData } from "./components/UserData";
+//import { UserData } from "./components/UserData";
 import UserList from "./components/UserList";
 import { useFilterConext } from "./context/FilterContext";
 
@@ -49,13 +49,16 @@ function App() {
                 <form action="#">
                   <label htmlFor="sort"></label>
                   <select name="sort" id="sort" onClick={sorting}>
-                    
+                    <option value="0">Droupdown</option>
+                    <option value="#" disabled></option>
                     <option value="male">Male</option>
-                    
-
+                    <option value="#" disabled></option>
                     <option value="female">Female</option>
-                    <option value="a-z">a-z</option>
-                    <option value="z-a">z-a</option>
+                    <option value="#" disabled></option>
+                    <option value="a-z">Assending</option>
+                    <option value="#" disabled></option>
+                    <option value="z-a">Dessending</option>
+                    <option value="#" disabled></option>
                   </select>
                 </form>
               </div>

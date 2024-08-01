@@ -7,6 +7,7 @@ const UserList = () => {
 
   return (
     <>
+     <section className="border-2 black">
       <table>
         <thead>
           <tr>
@@ -26,7 +27,7 @@ const UserList = () => {
               currentUser;
             const { title } = currentUser.company;
             const { state, country } = currentUser.address;
-
+                
             return (
               <>
                 <tr key={id}>
@@ -50,6 +51,7 @@ const UserList = () => {
           })}
         </tbody>
       </table>
+      </section>
     </>
   );
 };
